@@ -1,27 +1,22 @@
-# Introduction
+# Data Set Information
 
-The script `run_analysis.R`
-- downloads the data from
-  [UCI Machine Learning Repository](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-    * [Description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-- merges the training and test sets to create one data set 
-- replaces `activity` values in the dataset with descriptive activity names
-- extracts only the measurements (features) on the mean and standard deviation
-  for each measurement
-- appropriateddly labels the columns with descriptive names
-- creates a second, independent tidy dataset with an average of each variable
-  for each each activity and each subject. In other words, same type of
-  measurements for a particular subject and activity are averaged into one value
-  and the tidy data set contains these mean values only. The processed tidy data
-  set is also exported as txt file in csv format.
-  
-# The original data set
+The experiments have been carried out with a group of 30 volunteers within an age 
+bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, 
+WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) 
+on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial 
+linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The 
+experiments have been video-recorded to label the data manually. The obtained dataset 
+has been randomly partitioned into two sets, where 70% of the volunteers was selected 
+for generating the training data and 30% the test data.
 
-The original data set is split into training and test sets (70% and 30%,
-respectively) where each partition is also split into three files that contain
-- measurements from the accelerometer and gyroscope
-- activity label
-- identifier of the subject
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise 
+filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap 
+(128 readings/window). The sensor acceleration signal, which has gravitational and 
+body motion components, was separated using a Butterworth low-pass filter into body 
+acceleration and gravity. The gravitational force is assumed to have only low frequency 
+components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, 
+a vector of features was obtained by calculating variables from the time and frequency 
+domain.
 
 # Getting and cleaning data
 
