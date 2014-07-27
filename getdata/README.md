@@ -13,3 +13,7 @@ The script `run_analysis.R`
   measurements for a particular subject and activity are averaged into one value
   and the tidy data set contains these mean values only. The processed tidy data
   set is also exported as txt file in csv format.
+
+# Run
+Run `source("run_analysis.R")`. It will generate two new files `tidy-UCI-HAR-dataset.txt` and `tidy-UCI-HAR-avgs-dataset.txt` in your working directory.
+
