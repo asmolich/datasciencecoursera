@@ -2,7 +2,7 @@ if (!file.exists("data")){
     dir.create("data")
 }
 csvUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
-#download.file(csvUrl, destfile="./data/housing2006.csv", method="curl")
+download.file(csvUrl, destfile="./data/housing2006.csv", method="curl")
 
 housing <- read.csv("./data/housing2006.csv")
 
@@ -12,16 +12,16 @@ print('==============')
 
 library(jpeg)
 jpegUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fjeff.jpg"
-#download.file(jpegUrl, destfile="./data/jeff.jpg", method="curl")
+download.file(jpegUrl, destfile="./data/jeff.jpg", method="curl")
 
 image <- readJPEG("./data/jeff.jpg", native=TRUE)
 print(quantile(image, probs = c(0.3, 0.8)))
 print('==============')
 
 gdpUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv"
-#download.file(gdpUrl, destfile="./data/gdp.csv", method="curl")
+download.file(gdpUrl, destfile="./data/gdp.csv", method="curl")
 eduUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv"
-#download.file(eduUrl, destfile="./data/edu.csv", method="curl")
+download.file(eduUrl, destfile="./data/edu.csv", method="curl")
 
 gdp <- read.csv("./data/gdp.csv", header = FALSE, skip = 5, stringsAsFactors = FALSE,
                 col.names=c("CountryCode", "Ranking", "X1", "Country", "USD", "X2", "X3", "X4", "X5", "X6"))
