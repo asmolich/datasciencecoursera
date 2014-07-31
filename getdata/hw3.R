@@ -51,3 +51,4 @@ print('==============')
 
 res <- table(x$Income.Group, cut(x$Ranking, breaks=quantile(x$Ranking, prob=seq(0, 1, length=6))), useNA = c("no"))
 print(res)
+
